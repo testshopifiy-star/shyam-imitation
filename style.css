@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-gold:hover, .btn-gold:focus {
     background-color: var(--gold-dark);
     color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 15px 4px rgba(212, 175, 55, 0.5);
 }
 
 .btn-outline-gold {
@@ -94,8 +94,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--gold);
     color: var(--white);
     border-color: var(--gold);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 15px 4px rgba(212, 175, 55, 0.4);
 }
 
 .btn-outline-dark {
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-dark:hover, .btn-outline-dark:focus {
     background-color: var(--dark-custom);
     color: var(--white);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.03);
     box-shadow: 0 5px 15px rgba(28, 28, 28, 0.2);
 }
 
@@ -121,8 +121,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--gold);
     border-color: var(--gold);
     color: var(--white);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 0 20px 6px rgba(212, 175, 55, 0.5);
 }
 
 /* Navbar */
@@ -319,9 +319,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--cream);
 }
 .product-card img {
-    height: 480px;
-    object-fit: contain;
-    padding: 1rem;
+    height: 380px;
+    object-fit: cover;
     transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .product-card:hover img {
@@ -329,15 +328,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Contact Section */
-.icon-circle {
-    width: 80px;
-    height: 80px;
+.icon-circle-sm {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
     background: var(--cream);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
     transition: all 0.4s ease;
 }
 
@@ -346,10 +342,10 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(0,0,0,0.03);
 }
 .contact-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.06) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
 }
-.contact-card:hover .icon-circle {
+.contact-card:hover .icon-circle-sm {
     background: var(--gold);
     color: var(--white) !important;
     transform: scale(1.1);
@@ -359,6 +355,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact-link:hover {
     color: var(--gold) !important;
+}
+
+/* Contact Form */
+.custom-input {
+    transition: all 0.3s ease;
+}
+.custom-input:focus {
+    background: var(--white) !important;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15) !important;
+}
+.custom-btn-hover {
+    transition: all 0.3s ease;
+}
+.custom-btn-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3) !important;
 }
 
 /* Footer Section */
